@@ -107,17 +107,19 @@ function generateMarkdown(response) {
 
   return `
   # ${response.title}
-
-  ## Table of Contents
-  - [Description](#Description)
-  - [Installation](#Installation)
-  - [Usage](#Usage)
-  - [Technologies Used](#TechnologiesUsed)
-  - [Credits](#Credits)
-  - [License](#License)
+  ${licenseBadge}
 
   ## Description
   ${response.description}
+
+  ## Table of Contents
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Tests](#Tests)
+  - [Technologies Used](#Technologies Used)
+  - [Contributing](#Contributing)
+  - [Questions](#Questions)
+  - [License](#License)
 
   ## Installation
   ${response.installation}
@@ -125,13 +127,22 @@ function generateMarkdown(response) {
   ## Usage
   ${response.usage}
 
+  ## Tests
+  ${response.tests}
+
   ## Technologies Used
   ${response.techUsed}
 
-  ## Credits 
+  ## Contributing 
   ${response.credits}
 
-  ## License ${licenseBadge}
+  ## Questions
+  Let's Make Something Great Together
+  See My Work: [${response.github}](${response.github})
+  Reach Out: [${response.email}](mailto:${response.email})
+
+
+  ## License 
   This project is licensed under the [${response.license}](${licenseLink})
 `;
 }

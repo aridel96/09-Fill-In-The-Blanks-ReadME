@@ -26,13 +26,28 @@ const questions = [{
     },
     {
         type: 'input',
-        name: 'credits',
-        message: 'Are there any collaborators? If yes, please enter everyone and their corresponding GitHub link:'
+        name: 'tests',
+        message: 'Please enter any test information here:'
     },
     {
         type: 'input',
         name: 'techUsed',
         message: 'Did you use any third-party assets? If so please list the creators with links to their primary web presence:'
+    },
+    {
+        type: 'input',
+        name: 'credits',
+        message: 'Are there any collaborators? If yes, please enter everyone and their corresponding GitHub link:'
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Please enter a link to your GitHub account'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Please enter your email address'
     },
     {
         type: 'list',
@@ -49,7 +64,7 @@ function writeFile(userInput) {
     myReadME = generateMarkdown(userInput);
 
     fs.writeFile('ReadME.md', myReadME, (err) => {              // Write the data from myReadME to the file named ReadME.md
-        err ? console.log(err) : console.log('success!')        // If there's an error then console log the error otherwise console log 'success!'
+        err ? console.log(err) : console.log('Congratulations! Your ReadMe has been created')        // If there's an error then console log the error otherwise console log success message
     });
 }
 
