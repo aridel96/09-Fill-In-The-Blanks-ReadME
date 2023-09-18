@@ -42,12 +42,12 @@ const questions = [{
     {
         type: 'input',
         name: 'github',
-        message: 'Please enter a link to your GitHub account'
+        message: 'Please enter a link to your GitHub account:'
     },
     {
         type: 'input',
         name: 'email',
-        message: 'Please enter your email address'
+        message: 'Please enter your email address:'
     },
     {
         type: 'list',

@@ -116,7 +116,7 @@ function generateMarkdown(response) {
   - [Installation](#Installation)
   - [Usage](#Usage)
   - [Tests](#Tests)
-  - [Technologies Used](#Technologies Used)
+  - [Technologies Used](#Technologies-Used)
   - [Contributing](#Contributing)
   - [Questions](#Questions)
   - [License](#License)
@@ -137,9 +137,9 @@ function generateMarkdown(response) {
   ${response.credits}
 
   ## Questions
-  Let's Make Something Great Together
-  See My Work: [${response.github}](${response.github})
-  Reach Out: [${response.email}](mailto:${response.email})
+  Let's Make Something Great Together   
+  See My Work: [${response.github}](${response.github})   
+  Reach Out: [${response.email}](mailto:${response.email})   
 
 
   ## License 
