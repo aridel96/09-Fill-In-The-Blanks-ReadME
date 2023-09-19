@@ -21,7 +21,7 @@
   Once the user typed in the command 'node index.js' they will be prompted to answer a series of questions in order to create their readme file
 
   ### Screenshots
-  [ReadMe file](/Screenshot%202023-09-19%20002505.png)
+  ![ReadMe file](/Screenshot%202023-09-19%20002505.png)
 
   ## Tests
   Not Applicable
